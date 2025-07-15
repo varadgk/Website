@@ -17,7 +17,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.22); /* slight dim */
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   z-index: 0;
   pointer-events: none;
 }
@@ -127,4 +127,98 @@ header {
   text-decoration: underline;
   margin-bottom: 0.5rem;
   align-self: flex-start;
+}
+
+.about-box {
+  width: 52vw; /* 65% of previous 80vw */
+  max-width: 650px;
+  margin: 7vh auto 0 auto;
+  background: rgba(255,255,255,0.13);
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 350px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-greeting {
+  font-family: 'Ribeye Marrow', cursive, Arial, sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 4px 4px 16px rgba(0,0,0,0.7), 0 0 2px #fff;
+  margin-bottom: 0.5rem;
+}
+
+.about-greeting p {
+  margin: 0.7rem 0 0 0;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.45);
+  max-width: 400px;
+}
+
+.about-socials {
+  margin-top: 1.2rem;
+  font-size: 1.35rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.45);
+  text-align: left;
+  font-weight: 500;
+}
+
+.about-social-link {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+  font-weight: 700;
+  font-size: 1.35rem;
+  transition: color 0.2s;
+}
+
+.about-social-link:hover {
+  color: #ffd700;
+}
+
+.about-bio {
+  width: 100%;
+  margin-top: 2.2rem;
+}
+
+.about-bio p {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.45);
+  margin: 1.1rem 0 0 0;
+}
+
+.about-thankyou {
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.45);
+  text-align: left;
+}
+
+.about-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  margin-left: 2rem;
 } 
