@@ -4,7 +4,7 @@ body {
   padding: 0;
   min-height: 100vh;
   /* background: #f5ecd7; */ /* beige */
-  background: url('bg-image.jpg') no-repeat center center fixed;
+  background: url('backgroundd.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Ribeye Marrow', cursive, Arial, sans-serif;
   color: #fff; /* White text */
@@ -17,7 +17,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.32); /* increased dim */
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   z-index: 0;
   pointer-events: none;
 }
@@ -256,7 +256,7 @@ header {
 }
 
 .menu-section {
-  margin: 2.2rem 0 2.2rem 0;
+  margin: 1.2rem 0 1.2rem 0;
 }
 
 .menu-section-title {
@@ -273,10 +273,15 @@ header {
 
 .menu-section-title::after {
   content: "";
-  display: inline-block;
-  margin: 0.7rem 0 0 0;
-  width: 100%;
+  display: block;
+  margin: 0.3rem auto 0 auto;
+  width: 40%;
   border-bottom: 2px dashed #fff;
+}
+
+/* Specific adjustment for Aglio e Oilo image/desc spacing */
+.menu-section .dish:first-of-type .dish-img-row {
+  margin-bottom: 0.3rem;
 }
 
 .dish {
